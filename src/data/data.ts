@@ -1,5 +1,5 @@
-export const data = {
-    "1": {
+export const data = [
+    {
       "id":1,
       "category": "General Knowledge",
       "questions": {
@@ -1961,7 +1961,7 @@ export const data = {
         ]
       }
     },
-    "2": {
+    {
       "id":2,
       "category": "Sports",
       "questions": {
@@ -3403,7 +3403,7 @@ export const data = {
         ]
       }
     },
-    "3": {
+    {
       "id":3,
       "category": "Books",
       "questions": {
@@ -4351,7 +4351,7 @@ export const data = {
         ]
       }
     },
-    "4": {
+    {
       "id":4,
       "category": "Japanese Anime and Manga",
       "questions": {
@@ -5910,4 +5910,4 @@ export const data = {
         ]
       }
     }
-  }
+]

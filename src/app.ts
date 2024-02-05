@@ -4,6 +4,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { router_backend_services } from './routes/backend_services';
 import connectDB from './database/db';
+import bodyParser from 'body-parser';
+import { router_quiz } from './routes/quiz';
 dotenv.config();
 
 const app = express();
@@ -20,10 +22,13 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions))
+app.use(bodyParser.json());
 
 
 
 app.use('/backend_services',router_backend_services);
+app.use('/quiz',router_quiz);
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
